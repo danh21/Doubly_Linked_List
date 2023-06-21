@@ -134,7 +134,7 @@ douList *insertAt(douList *list, int pos, int data) {
             list = addHead(list, data);
         else if (pos == list->numOfNodes)
             list = addTail(list, data);
-        else if (pos > 0 && pos < list->numOfNodes) {
+        else {
             node *temp = new node;          // inserted node
 
             for (int i = 1; i < pos; i++)   // previous node of inserted node
